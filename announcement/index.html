@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+    <title>Announcement Page</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">LET US DREAM</a>
+        <ul>
+            <li><a href="../homepage/index.html" class="active">Home</a></li>
+        </ul>
+    </header>
+    
+    <Section>
+        <h2 id="text"><span>Know what's new</span><br>Announcement</h2>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png" id="bird1">
+        <img src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png" id="bird2">
+        <img src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png" id="forest">
+        
+        <a href="#" id="btn">Explore</a>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png" id="rocks">
+        <img src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png" id="water">
+    </Section>
+    
+    <div class="sec">
+        <h2>Notice Board</h2>
+<div class="slider" x-data="{start: true, end: false}">
+  <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+    <div class="slider__item">
+      <img class="slider__image" src="./undraw_Remote_meeting_re_abe7.png" alt="Image">
+      <div class="slider__info">
+        <h2>Meeting</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="./undraw_Projections_re_ulc6.png" alt="Image">
+      <div class="slider__info">
+        <h2>Projects</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="./undraw_Activity_tracker_re_2lvv.png" alt="Image">
+      <div class="slider__info">
+        <h2>Activities</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="./undraw_Result_re_uj08.png" alt="Image">
+      <div class="slider__info">
+        <h2>Results</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="./undraw_Eiffel_tower_re_e11r.png" alt="Image">
+      <div class="slider__info">
+        <h2>Cluturals</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="./undraw_greek_freak_j2qb.png" alt="Image">
+      <div class="slider__info">
+        <h2>Sports</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="./undraw_Gift_re_qr17.png" alt="Image">
+      <div class="slider__info">
+        <h2>Achivements</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="./undraw_Job_hunt_re_q203.png" alt="Image">
+      <div class="slider__info">
+        <h2>Skills</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="./undraw_Newspaper_re_syf5.png" alt="Image">
+      <div class="slider__info">
+        <h2>News</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="./undraw_Trends_re_2bd0.png" alt="Image">
+      <div class="slider__info">
+        <h2>Trends</h2>
+      </div>
+    </div>
+    <!-- <div class="slider__item">
+      <img class="slider__image" src="" alt="Image">
+      <div class="slider__info">
+        <h2>Stock Markets</h2>
+      </div>
+    </div> -->
+  </div>
+  <div class="slider__nav">
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js'></script><script  src="./script.js"></script>
+
+    </div>
+    
+    
+    
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+    
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
