@@ -2,7 +2,7 @@
 <?php
 
 //error_reporting(0);
-include '../Lets-dream-Mentor-dashboard/db_connection/config.php';
+include './config.php';
 //get mentor table 
 $query = 'SELECT * FROM mentor_table';
 $result = mysqli_query($conn, $query);
@@ -42,7 +42,7 @@ function return_details($mentee_list,$mentor_list,$email,$password)
             if ($mentee["mentee_pass"] == $password) {
 
                // return $mentee;
-                $url = "Location: ../Lets-dream-Mentee-dashboard/index.html";
+                $url = "Location: ../mentee_homepage/index.html";
                header($url);
                break;
             } else {

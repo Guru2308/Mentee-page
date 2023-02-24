@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materials</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+</head>
+<body>
+    
+    <div class="header">  
+        <a href="#default" class="logo">Materials</a>
+        <div class="header-right">
+          <a class="active" href="http://127.0.0.1:5500/htdocs/Lets-dream-test-2062019/materials/Mentee-Home-Page/homepage/index.html">Home</a>
+          
+          
+        </div>
+    </div>
+    <button class="accordion">Module 1</button>
+    <div class="panel">
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 1 </h4> </a> 
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 2 </h4> </a>
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 3 </h4> </a>
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 4 </h4> </a> 
+    </div>
+      
+    <button class="accordion">Module 2</button>
+    <div class="panel">
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 1 </h4> </a> 
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 2 </h4> </a> 
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 3 </h4> </a> 
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 4 </h4> </a>
+        
+    </div>
+      
+    <button class="accordion">Module 3</button>
+    <div class="panel">
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 1 </h4> </a> 
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 2 </h4> </a>
+        <a href=""><h4><span class="glyphicon glyphicon-file"></span>  Chapter 3 </h4> </a>
+        
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) 
+        {
+          acc[i].addEventListener("click", function() 
+          {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") 
+            {
+              panel.style.display = "none";
+            } else 
+            {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
+   
+    
+</body>
+</html>
