@@ -58,8 +58,8 @@
     position: absolute;
     width: 340px;
     height: 179px;
-    left: 71px;
-    top: 252px;
+    left: 295px;
+    top: 441px;
 
     background: #FFC90E;
     border-radius: 40px;
@@ -88,94 +88,10 @@
     position: absolute;
     width: 382px;
     height: 179px;
-    left: 501px;
-    top: 252px;
+    left: 808px;
+    top: 441px;
 
     background: #B5E61D;
-    border-radius: 40px;
-}
-
-.button-3{
-    position: absolute;
-    width: 153px;
-    height: 60px;
-    left: calc(50% - 153px/2 + 452.5px);
-    top: calc(50% - 60px/2 - 165.5px);
-    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 49px;
-    
-    color: #000000;
-    
-    border: 1px solid #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    position: absolute;
-    width: 337px;
-    height: 179px;
-    left: 973px;
-    top: 252px;
-
-    background: #7092BE;
-    border-radius: 40px;
-}
-
-.button-4{
-    position: absolute;
-    width: 235px;
-    height: 54.83px;
-    left: calc(50% - 235px/2 - 295.5px);
-    top: calc(50% - 54.83px/2 + 161.06px);
-    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 49px;
-    
-    color: #000000;
-    
-    border: 1px solid #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    position: absolute;
-    width: 415px;
-    height: 151px;
-    left: 220px;
-    top: 587px;
-    
-    background: #525ACF;
-    border-radius: 40px;
-}
-
-.button-5{
-    position: absolute;
-    width: 348px;
-    height: 53.15px;
-    left: calc(50% - 348px/2 + 268px);
-    top: calc(50% - 53.15px/2 + 161.91px);
-    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 49px;
-    
-    color: #000000;
-    
-    border: 1px solid #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    position: absolute;
-    width: 378.41px;
-    height: 151px;
-    left: 784px;
-    top: 587px;
-
-    background: #FF7F27;
     border-radius: 40px;
 }
 
